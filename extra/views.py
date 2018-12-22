@@ -31,6 +31,7 @@ class Container_types(View):
 	def get(self,request):
 		obj=CT.objects.all()
 		#a=serializers.serialize("json",CT.objects.all())
+		dict_a = { "data":obj }
 		if obj:
 			#print obj
 			res=[]
@@ -40,7 +41,8 @@ class Container_types(View):
 
 					})
 			print obj[0].get_all_ct
-			return HttpResponse(json.dumps(res),content_type='application/json',status=200)
+			return render(request,'container_types.html',context= dict_a)
+			#return HttpResponse(json.dumps(res),content_type='application/json',status=200)
 		else:
 			HttpResponse("No Container Found")
 	def post(self,request):

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>container types</title>
+  </head>
+  <h1>Container Types</h1>
+  {% if data %}
+  {% for i in data %}
+  <p>{{ i.name }}</p>
+  {% endfor %}
+  {%endif%}
+  <body>
+
+  </body>
+</html>

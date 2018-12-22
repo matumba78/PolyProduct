@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>landing page</title>
+    <link rel="stylesheet" href="{% static "css/index.css"%}">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Indie+Flower" rel="stylesheet">
+  </head>
+  <body>
+      <h1 id="h1"><strong>Welcome to the Landing Page</strong></h1>
+      <h2 id="h2"><strong>We're a startup that does something</strong></h2>
+      <h2><strong>Sign up for our Launch!</strong></h2>
+      <form class="signup" action="thankyou.html" method="get">
+        <label for="fname">First Name:</label><br>
+        <input id="fname" type="text" name="" value=""><br>
+        <label for="lname">Last Name:</label><br>
+        <input id="lname" type="text" name="" value=""><br>
+        <label for="mail">Email</label><br>
+        <input type="email" name="" value=""><br>
+        <label for="submit"></label>
+        <input id="submit" type="submit" name="" value="Sign me up!">
+
+
+
+      </form>
+
+  </body>
+</html>

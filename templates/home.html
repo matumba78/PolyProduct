@@ -3,27 +3,49 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>landing page</title>
-    <link rel="stylesheet" href="{% static "css/index.css"%}">
+    <title>Poly Poduct</title>
+    <link rel="stylesheet" href="{% static "css/home.css"%}">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
   <body>
-      <h1 id="h1"><strong>Welcome to the Landing Page</strong></h1>
-      <h2 id="h2"><strong>We're a startup that does something</strong></h2>
-      <h2><strong>Sign up for our Launch!</strong></h2>
-      <form class="signup" action="thankyou.html" method="get">
-        <label for="fname">First Name:</label><br>
-        <input id="fname" type="text" name="" value=""><br>
-        <label for="lname">Last Name:</label><br>
-        <input id="lname" type="text" name="" value=""><br>
-        <label for="mail">Email</label><br>
-        <input type="email" name="" value=""><br>
-        <label for="submit"></label>
-        <input id="submit" type="submit" name="" value="Sign me up!">
+  	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  	<div class="container" id="topbar">
+      <h1 id="h1"><strong>PolyProduct</strong></h1>
+      <p></p>
+      <div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    
+  </a>
 
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#create_container.html">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>	
+  </div>
+</div>
+ </div>
 
+  </nav>
 
-      </form>
+ <div class="split left">
+ 	<div class="centered">
+ 		<h1>Actions</h1>
+ 		<ul><a href="get_content.html">GET</a></ul>
+ 		<ul><a href="ads">POST</ul>
+ 		<ul><a href="ads">PUT</ul>
+ 		<ul><a href="ads">DELETE</a></ul>
+
+ 		
+ 	</div>
+ </div>
+ <div class="split right">
+ 	<div class="centered">
+ 		<h1>Actions</h1>
+ 		
+ 	</div>
+ </div>
+ 
 
   </body>
 </html>
